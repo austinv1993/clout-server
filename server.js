@@ -7,10 +7,11 @@ var express = require('express')
 ,   mongoose = require('mongoose')
 ,   mongooseUri = secrets.mongooseUri
 ,   app = express();
+// https://blooming-shore-7771.herokuapp.com/ | https://git.heroku.com/blooming-shore-7771.git
 
 app.use(bodyParser.json());
 app.use(cors());
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 //EXERCISES//
 
